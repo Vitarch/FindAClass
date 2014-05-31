@@ -1,11 +1,11 @@
 __author__ = "Tony Ling"
-# Automated web form info harvest for website 
-# https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do
-#
 # Change Log:
-#    5/27/14 - File creation.  Added TonyHTMLParser Class, and WebFormParser class.
+#    5/29/14 - File creation.  Added TonyHTMLParser Class, and
+#              WebFormParserNYCChildCare class.
 #              get_web_form_results method added to obtain data.
 #              HTML Parser class used to parse through obtained data.
+#    5/30/14 - Restructured comments, renamed WebFormParser to
+#              WebFormParserNYCChildC since it was not a generic class
 #
 # Resources:
 #  http://www.blog.pythonlibrary.org/2012/06/08/python-101-how-to-submit-a-web-form/
@@ -16,8 +16,14 @@ import requests
 import webbrowser
 import json
 
-# HTMLParser used within WebFormParser
+# HTMLParser used within WebFormParserNYCChildCare
 class TonyHTMLParser(HTMLParser):
+	"""
+	HTML parser meant for use in WebFormParser class
+	  Constructor parameters:
+	    url = website url
+	    print_count = True to print to stdout number of child services found
+	"""
 	def __init__(self, url, print_count = False):
 		HTMLParser.__init__(self)
 		self.cur_tag = "nil"
@@ -34,9 +40,16 @@ class TonyHTMLParser(HTMLParser):
 			print("{0} child care services found".
 			      format(data.strip().split()[0]))
 
-class WebFormParser:
-	def __init__(self, url):
-		self.url = url
+class WebFormParserNYCChildCare:
+	"""
+
+	Automated web form info harvest for website HTML form
+	https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do'
+ 	  Constructor parameters:
+ 	    url = website url
+	"""
+	def __init__(self):
+		self.url = 'https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do'
 	def get_web_form_results(self, name, program_type, borough, 
 						 neighborhood, zip, permit_no):
 		""" 
@@ -97,5 +110,5 @@ class WebFormParser:
 		# webbrowser.open("test2.html")
 
 if __name__ == "__main__":
-	web_parser = WebFormParser('https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do')
+	web_parser = WebFormParserNYCChildCare()
 	web_parser.get_web_form_results(None, None, None, None, None, None)

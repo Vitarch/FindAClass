@@ -1,9 +1,9 @@
 __author__ = "Tony Ling"
 # Change Log:
-#    5/28/14 - File created.
+#    5/29/14 - File created.
 #              CKANApi created for generic CKAN api search.
 #              datastore search method added to CKAN class.
-#              CKANApiASP class created specifically to filter out
+#    5/30/14 - CKANApiASP class created specifically to filter out
 #              libraries from results for specific datastore.
 #              Added support for queries and limit
 #
