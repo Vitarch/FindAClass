@@ -18,6 +18,16 @@ class CVSHandler():
 	def __init__(self, timeout=5.0):
 		self.timeout = timeout
 	def download_cvs_file(self, url, directory=""):
+		"""
+
+		Downloads a cvs file and saves it in a directory
+		
+		Parameters:
+		  url = location of cvs file
+		  directory = directory where to save file, ex: "test/"
+		
+		No return value
+		"""
 		try:
 			r = requests.get(url, timeout=self.timeout)
 		except requests.exceptions.Timeout:
@@ -28,9 +38,19 @@ class CVSHandler():
 			with open(file_name, 'w') as f:
 				f.write(r.text)
 		except Exception as e:
-			print(e)
+			print(e, file=sys.stderr)
 
 	def download_cvs_file_to_JSON(self, url, directory=""):
+		"""
+
+		Downloads a cvs file, converts it to JSON and saves it in a directory
+		
+		Parameters:
+		  url = location of cvs file
+		  directory = directory where to save file, ex: "test/"
+		
+		No return value
+		"""
 		try:
 			r = requests.get(url, timeout=self.timeout)
 		except requests.exceptions.Timeout:
@@ -45,7 +65,7 @@ class CVSHandler():
 					f.write(json.dumps(ele, 
 									sort_keys=True, indent=4, separators=(',', ': ')))
 		except Exception as e:
-			print(e)
+			print(e, file=sys.stderr)
 
 if __name__ == "__main__":
 	test = CVSHandler()

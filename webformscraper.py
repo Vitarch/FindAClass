@@ -19,10 +19,12 @@ import json
 # HTMLParser used within WebFormParserNYCChildCare
 class TonyHTMLParser(HTMLParser):
 	"""
+
 	HTML parser meant for use in WebFormParser class
-	  Constructor parameters:
-	    url = website url
-	    print_count = True to print to stdout number of child services found
+	
+	Constructor parameters:
+	  url = website url
+	  print_count = True to print to stdout number of child services found
 	"""
 	def __init__(self, url, print_count = False):
 		HTMLParser.__init__(self)
@@ -45,8 +47,9 @@ class WebFormParserNYCChildCare:
 
 	Automated web form info harvest for website HTML form
 	https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do'
- 	  Constructor parameters:
- 	    url = website url
+
+ 	Constructor parameters:
+      url = website url
 	"""
 	def __init__(self):
 		self.url = 'https://a816-healthpsi.nyc.gov/ChildCare/SearchAction2.do'
@@ -56,6 +59,7 @@ class WebFormParserNYCChildCare:
 
 		Obtains web form results from website using the passed in arguments
 		Set parameters to None if no value
+
 		Parameters:
 			name         = facilty name
 			program_type = 'INFANT TODDLER' or 'PRESCHOOL'
@@ -63,6 +67,7 @@ class WebFormParserNYCChildCare:
 			zip          = zip code
 			neighborhood = one of the neighborhood in NYC
 			permit_no    = permit number
+		No return value
 		"""
 
 		# Use a Session object to keep alive connection to server

@@ -21,10 +21,12 @@ import sys
 
 class CKANApi:
 	"""
+
 	Generic CKANApi class used for retrieving data
-	 Constructor parameters:
-	   site      = base website ex: 'http://nycdoe.pediacities.com'
-	   api_level = api level if applicable, default is None
+	
+	Constructor parameters:
+	  site      = base website ex: 'http://nycdoe.pediacities.com'
+	  api_level = api level if applicable, default is None
 	"""
 	def __init__(self, site, api_level=None):
 		if (api_level):
@@ -36,11 +38,14 @@ class CKANApi:
 	def datastore_search(self, resource_id, q=None, limit=None):
 		"""
 
-		retrieves resouces using HTTP get API
+		Retrieves resouces using HTTP get API
+
+		Parameters:
 		  resource_id = resource id of data
 		  q           = query
 		  limit       = number of elements returned
-		returns JSON object if successful API call, None otherwise
+		
+		Returs JSON object if successful API call, None otherwise
 		"""
 
 		url = '{0}datastore_search?resource_id={1}'.format(self.api, resource_id)
@@ -77,11 +82,14 @@ class CKANApiASP(CKANApi):
 	def datastore_search_afterschool(self, resource_id, q=None, limit=None):
 		"""
 
-		retrieves 'After-school programs' resources
+		Retrieves 'After-school programs' resources
+
+		Parameters:
 		  resource_id = "1e042827-d69d-48f0-a2ba-1df13c3c307e"
 		  q           = query
 		  limit       = number of elements returned
-		returns JSON object if successfull API call, None otherwise
+
+		Returns JSON object if successfull API call, None otherwise
 		"""
 		resource_id = "1e042827-d69d-48f0-a2ba-1df13c3c307e"
 		url = '{0}datastore_search?resource_id={1}'.format(self.api, resource_id)
