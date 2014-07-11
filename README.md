@@ -17,3 +17,7 @@ http://nycdoe.pediacities.com/dataset/after-school-upk-programs/resource/3bbb0a0
 
 UPK for BigApps
 http://nycdoe.pediacities.com/dataset/after-school-upk-programs/resource/b6fbf067-2dae-4b4f-ad5e-54f1d8d0d03b
+
+
+Summer camps
+http://www.nyc.gov/html/doh/html/living/campmn.shtml
