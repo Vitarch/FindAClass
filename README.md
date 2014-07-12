@@ -32,3 +32,8 @@ Django
 To make changes to model.py see
 Try Django Tutorial 15 of 21 - Django Update Thank You Page and View after Paypal Purchase
 https://www.youtube.com/watch?v=Cmk_HeQwwtg
+
+
+PhoneGap
+========
+http://phonegap.com/
