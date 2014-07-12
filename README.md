@@ -33,6 +33,9 @@ To make changes to model.py see
 Try Django Tutorial 15 of 21 - Django Update Thank You Page and View after Paypal Purchase
 https://www.youtube.com/watch?v=Cmk_HeQwwtg
 
+To move to production:
+Try Django Tutorial 18 of 21 - Create MySQL for Django Production Server and setup
+https://www.youtube.com/watch?v=cJESeioAFpU
 
 PhoneGap
 ========
