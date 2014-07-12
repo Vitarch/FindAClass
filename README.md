@@ -21,3 +21,6 @@ http://nycdoe.pediacities.com/dataset/after-school-upk-programs/resource/b6fbf06
 
 Summer camps
 http://www.nyc.gov/html/doh/html/living/campmn.shtml
+
+Daycare
+https://github.com/childcaremap/NYCdaycare/tree/gh-pages/python_scraper
