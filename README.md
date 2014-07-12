@@ -24,3 +24,11 @@ http://www.nyc.gov/html/doh/html/living/campmn.shtml
 
 Daycare
 https://github.com/childcaremap/NYCdaycare/tree/gh-pages/python_scraper
+
+
+Django
+======
+
+To make changes to model.py see
+Try Django Tutorial 15 of 21 - Django Update Thank You Page and View after Paypal Purchase
+https://www.youtube.com/watch?v=Cmk_HeQwwtg
