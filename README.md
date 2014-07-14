@@ -33,6 +33,18 @@ To make changes to model.py see
 Try Django Tutorial 15 of 21 - Django Update Thank You Page and View after Paypal Purchase
 https://www.youtube.com/watch?v=Cmk_HeQwwtg
 
+To Check if you have south installed:
+%pip freeze
+
+%python manage.py syncdb
+
+If you didn't make any changes to your model then convert to south for migrations
+%python manage.py convert_to_south findaclass
+
+If you have problems and can't fix it then the easiest fix is to delete the migrations folder and the db.sqlite3 file.  You will need to reload the databasae if you do this.
+
+
+
 To move to production:
 Try Django Tutorial 18 of 21 - Create MySQL for Django Production Server and setup
 https://www.youtube.com/watch?v=cJESeioAFpU
