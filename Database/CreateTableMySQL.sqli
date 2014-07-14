@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `summer_camp` (
+  `id` int(11) NOT NULL auto_increment,
+  `SUMMER` varchar(255) NOT NULL default '',
+  `SITE_NAME` varchar(255) NOT NULL default '',
+  `streetAddress` varchar(255) NOT NULL default '',
+  `postalCode` varchar(255) NOT NULL default '',
+  `latitude` varchar(255) NOT NULL default '',
+  `longitude` varchar(255) NOT NULL default '',
+  `loc` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+)
