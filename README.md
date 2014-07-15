@@ -56,6 +56,10 @@ To move to production:
 Try Django Tutorial 18 of 21 - Create MySQL for Django Production Server and setup
 https://www.youtube.com/watch?v=cJESeioAFpU
 
+
+django rest_framework
+http://www.django-rest-framework.org/
+
 PhoneGap
 ========
 http://phonegap.com/
