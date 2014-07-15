@@ -40,9 +40,13 @@ To Check if you have south installed:
 
 If you didn't make any changes to your model then convert to south for migrations
 %python manage.py convert_to_south findaclass
+%python manage.py schemamigration findaclass --auto
+%python manage.py migrate findaclass
 
-If you have problems and can't fix it then the easiest fix is to delete the migrations folder and the db.sqlite3 file.  You will need to reload the databasae if you do this.
+ONLY IN DEVELOPMENT: If you have problems and can't fix it then the easiest fix is to delete all the migrations folder and the db.sqlite3 file.  You will need to reload the databasae if you do this.  ONLY IN DEVELOPMENT!!!
 
+When making changes to static files:
+%python manage.py collectstatic
 
 
 To move to production:
