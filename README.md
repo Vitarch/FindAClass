@@ -57,8 +57,12 @@ Try Django Tutorial 18 of 21 - Create MySQL for Django Production Server and set
 https://www.youtube.com/watch?v=cJESeioAFpU
 
 
+Loading data repeatedly:
+https://code.djangoproject.com/wiki/Fixtures
+
 django rest_framework
 http://www.django-rest-framework.org/
+
 
 PhoneGap
 ========
