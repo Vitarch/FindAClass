@@ -49,6 +49,9 @@ When making changes to static files:
 %python manage.py collectstatic
 
 
+Queries:
+https://docs.djangoproject.com/en/dev/topics/db/queries/
+
 To move to production:
 Try Django Tutorial 18 of 21 - Create MySQL for Django Production Server and setup
 https://www.youtube.com/watch?v=cJESeioAFpU
