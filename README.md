@@ -25,6 +25,12 @@ http://www.nyc.gov/html/doh/html/living/campmn.shtml
 Daycare
 https://github.com/childcaremap/NYCdaycare/tree/gh-pages/python_scraper
 
+Data from NYC Department of Health and Mental Hygiene:
+
+Center-based child care at https://a816-healthpsi.nyc.gov/ChildCare/ChildCareList.do
+Home-based child care at http://it.ocfs.ny.gov/ccfs_facilitysearch/
+Located home-based child care information for download (or API access) on NY State Open Data Portal: https://data.ny.gov/Human-Services/Child-Care-Regulated-Programs/cb42-qumz
+
 
 Django
 ======
