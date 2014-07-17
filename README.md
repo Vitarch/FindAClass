@@ -71,6 +71,11 @@ django rest_framework
 http://www.django-rest-framework.org/
 
 
+Heroku
+======
+www.realpython.com/blog/python/migrating-your-django-project-to-heroku/
+
+
 PhoneGap
 ========
 http://phonegap.com/
